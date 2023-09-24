@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Hyper</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+ 
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+
+<body class="bg-light container-fluid">
+  <div class="row position-relative">
+    <div class="d-lg-block col-lg-2 d-none side-bar pe-0 vh-100 overflow-auto position-sticky top-0">
+      <div class="container">
+        <div class="sidebar-head pe-3 d-flex align-items-center justify-content-center w-100 position-sticky top-0 ">
+          <div class="position-relative me-2 d-flex align-items-center">
+            <div class="position-absolute blue-circle ms-2 rounded-circle "></div>
+            <div class="position-absolute white-circle rounded-circle "></div>
+          </div>
+          <h5 class="ms-4 text-white mb-0 sidebar-header">HYPER</h5>
+        </div>
+        <ul class="sidebar-nav list-unstyled">
+          <li class="side-nav small fw-bold py-4">NAVIGATION</li>
+          <li class="ps-2">
+            <a class="text-decoration-none d-flex justify-content-between py-0" href="">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-house-door"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+                </svg>
+                <span class="text-white ms-3 dashboard-text">Dashboards</span>
+              </div>
+              <div class="ms-2 dashboard-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-5-square-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm5.994 12.158c-1.57 0-2.654-.902-2.719-2.115h1.237c.14.72.832 1.031 1.529 1.031.791 0 1.57-.597 1.57-1.681 0-.967-.732-1.57-1.582-1.57-.767 0-1.242.45-1.435.808H5.445L5.791 4h4.705v1.103H6.875l-.193 2.343h.064c.17-.258.715-.68 1.611-.68 1.383 0 2.561.944 2.561 2.585 0 1.687-1.184 2.806-2.924 2.806Z" />
+                </svg>
+              </div>
+            </a>
+            <div>
+              <ul class="list-unstyled ms-4">
+                <li class="my-2"><a href="" class="text-decoration-none small text-secondary ms-2">Analytics</a></li>
+                <li class="my-2"><a href="" class="text-decoration-none text-white ms-2">Ecommerce</a></li>
+                <li class="my-2"><a href="" class="text-decoration-none small text-secondary ms-2">Projects</a></li>
+                <li class="my-2"><a href="" class="text-decoration-none small text-secondary ms-2">CRM</a></li>
+                <li class="my-2"><a href="" class="text-decoration-none small text-secondary ms-2">E-Wallet</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="side-nav small fw-bold py-4 ">APPS</li>
+          <li class="ps-2 mb-4">
+            <a class="text-decoration-none d-flex align-items-center py-0" href="">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(166, 173, 179)"
+                  class="bi bi-calendar4" viewBox="0 0 16 16">
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z" />
+                </svg>
+                <span class="fw-bold ms-3 dashboard-text text-secondary">Calendar</span>
+              </div>
+            </a>
+          </li>
+          <li class="ps-2 mb-4">
+            <a class="text-decoration-none align-items-center d-flex py-0" href="">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(166, 173, 179)"
+                  class="bi bi-chat-left-text-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                </svg>
+                <span class="fw-bold ms-3 dashboard-text text-secondary">Chat</span>
+              </div>
+            </a>
+          </li>
+          <li class="ps-2 mb-4">
+            <a class="text-decoration-none align-items-center d-flex justify-content-between py-0" href="">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(166, 173, 179)"
+                  class="bi bi-speedometer" viewBox="0 0 16 16">
+                  <path
+                    d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+                  <path fill-rule="evenodd"
+                    d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z" />
+                </svg>
+                <span class="fw-bold ms-3 dashboard-text text-secondary">CRM</span>
+              </div>
+              <div class="new-button bg-danger rounded-1 d-flex align-items-center justify-content-center">
+                <span class="text-white text-center new-button-text">New</span>
+              </div>
+            </a>
+          </li>
+          <li class="ps-2 mb-4">
+            <a class="text-decoration-none align-items-center justify-content-between d-flex py-0" href="">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(166, 173, 179)"
+                  class="bi bi-shop-window" viewBox="0 0 16 16">
+                  <path
+                    d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z" />
+                </svg>
+                <span class="fw-bold ms-3 dashboard-text text-secondary">Ecommerce</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(166, 173, 179)"
+                  class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="ps-2 mb-4">
+            <a class="text-decoration-none align-items-center justify-content-between d-flex py-0" href="">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(166, 173, 179)"
+                  class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                </svg>
+                <span class="fw-bold ms-3 dashboard-text text-secondary">Email</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(166, 173, 179)"
+                  class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="ps-2 mb-4">
+            <a class="text-decoration-none align-items-center justify-content-between d-flex py-0" href="">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(166, 173, 179)"
+                  class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z" />
+                  <path
+                    d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
+                </svg>
+                <span class="fw-bold ms-3 dashboard-text text-secondary">Projects</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(166, 173, 179)"
+                  class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="ps-2 mb-4">
+            <a class="text-decoration-none align-items-center justify-content-between d-flex py-0" href="">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(166, 173, 179)"
+                  class="bi bi-rss" viewBox="0 0 16 16">
+                  <path
+                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                  <path
+                    d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1z" />
+                </svg>
+                <span class="fw-bold ms-3 dashboard-text text-secondary">Social Feed</span>
+              </div>
+            </a>
+          </li>
+          <li class="ps-2 mb-4">
+            <a class="text-decoration-none align-items-center justify-content-between d-flex py-0" href="">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(166, 173, 179)"
+                  class="bi bi-journal-text" viewBox="0 0 16 16">
+                  <path
+                    d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                  <path
+                    d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
+                  <path
+                    d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
+                </svg>
+                <span class="fw-bold ms-3 dashboard-text text-secondary">Tasks</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(166, 173, 179)"
+                  class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="ps-2 mb-4">
+            <a class="text-decoration-none align-items-center justify-content-between d-flex py-0" href="">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(166, 173, 179)"
+                  class="bi bi-folder-check" viewBox="0 0 16 16">
+                  <path
+                    d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z" />
+                  <path
+                    d="M15.854 10.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.707 0l-1.5-1.5a.5.5 0 0 1 .707-.708l1.146 1.147 2.646-2.647a.5.5 0 0 1 .708 0z" />
+                </svg>
+                <span class="fw-bold ms-3 dashboard-text text-secondary">File Maneger</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="side-nav small fw-bold py-4 ">CUSTOM</li>
+
+          <li class="ps-2 mb-4">
+            <a class="text-decoration-none align-items-center justify-content-between d-flex py-0" href="">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(166, 173, 179)"
+                  class="bi bi-stickies" viewBox="0 0 16 16">
+                  <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5z" />
+                  <path
+                    d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zM3 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5V9h-4.5A1.5 1.5 0 0 0 9 10.5V15H3.5a.5.5 0 0 1-.5-.5v-11zm7 11.293V10.5a.5.5 0 0 1 .5-.5h4.293L10 14.793z" />
+                </svg>
+                <span class="fw-bold ms-3 dashboard-text text-secondary">Pages</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(166, 173, 179)"
+                  class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </div>
+            </a>
+          </li>
+
+          <li class="ps-2 mb-4">
+            <a class="text-decoration-none align-items-center d-flex justify-content-between py-0" href="">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(166, 173, 179)"
+                  class="bi bi-globe" viewBox="0 0 16 16">
+                  <path
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                </svg>
+                <span class="fw-bold ms-3 dashboard-text text-secondary">Landing</span>
+              </div>
+              <div class="new-button bg-secondary rounded-1 d-flex align-items-center justify-content-center">
+                <span class="text-white text-center new-button-text">New</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="ps-2 mb-4">
+            <a class="text-decoration-none align-items-center justify-content-between d-flex py-0" href="">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(166, 173, 179)"
+                  class="bi bi-window" viewBox="0 0 16 16">
+                  <path
+                    d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                  <path
+                    d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z" />
+                </svg>
+                <span class="fw-bold ms-3 dashboard-text text-secondary">Layout</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(166, 173, 179)"
+                  class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div class="col-lg-10 col-12 p-0">
+      <header>
+        <nav class="navbar navbar-expand bg-white p-0">
+          <div class="container-fluid d-flex justify-content-between align-items-center m-auto">
+            <div class="d-flex align-items-center gap-lg-2 gap-1">
+              <div class="position-relative me-2 d-lg-none d-flex align-items-center ">
+                <div class="position-absolute blue-circle border-secondary ms-2 rounded-circle "></div>
+                <div class="position-absolute white-circle bg-info rounded-circle "></div>
+              </div>
+              <button class="btn d-flex">
+                <svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="black"
+                  class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+              </button>
+              <form class="position-relative d-none d-xl-flex search-box" role="search">
+                <input class="form-control rounded-end-0 bg-body-tertiary " type="search" placeholder="Search"
+                  aria-label="Search" style="padding-left: 33px;" />
+                <div class="position-absolute pt-1 ps-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                  </svg>
+                </div>
+                <button class="btn btn-primary rounded-start-0" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+            <div class="d-flex align-items-center ">
+              <ul class="navbar-nav align-items-center gap-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="">
+                    <div class="search-svg d-xl-none d-block">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(89,92,90)"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item dropdown position-relative pb-3 mb-1 align-items-center">
+                  <div class="d-flex align-items-center ">
+                    <img src="image/USflag.svg" alt="US flag" height="12">
+                    <a class="nav-link p-1">English </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
+                    </svg>
+                  </div>
+                  <div class="position-absolute z-index-3 dropdown-content">
+                    <button class="ps-2 py-2 border-0"><img src="image/Germanflag.svg" alt="Germany flag" height="12">
+                      <span>German</span></button>
+                    <button class="ps-2 pb-2 border-0"><img src="image/Italyflag.svg" alt="Italian flag" height="12">
+                      <span>Italian</span></button>
+                    <button class="ps-2 pb-2 border-0"><img src="image/spainflag.svg" alt="Spanish flag" height="12">
+                      <span>Spanish</span></button>
+                    <button class="ps-2 pb-2 border-0"><img src="image/Russiasvg.svg" alt="Russian flag" height="12">
+                      <span>Russian</span></button>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link position-relative" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(89,92,90)"
+                      class="bi bi-bell" viewBox="0 0 16 16">
+                      <path
+                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                    </svg>
+                    <div class="circle position-absolute"></div>
+                  </a>
+                </li>
+                <li class="nav-item d-none d-sm-block">
+                  <a class="nav-link" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(89,92,90)"
+                      class="bi bi-bounding-box-circles" viewBox="0 0 16 16">
+                      <path
+                        d="M2 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM0 2a2 2 0 0 1 3.937-.5h8.126A2 2 0 1 1 14.5 3.937v8.126a2 2 0 1 1-2.437 2.437H3.937A2 2 0 1 1 1.5 12.063V3.937A2 2 0 0 1 0 2zm2.5 1.937v8.126c.703.18 1.256.734 1.437 1.437h8.126a2.004 2.004 0 0 1 1.437-1.437V3.937A2.004 2.004 0 0 1 12.063 2.5H3.937A2.004 2.004 0 0 1 2.5 3.937zM14 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM2 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm12 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item d-none d-sm-block">
+                  <a class="nav-link" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(89,92,90)"
+                      class="bi bi-gear" viewBox="0 0 16 16">
+                      <path
+                        d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                      <path
+                        d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item d-none d-sm-block">
+                  <a class="nav-link" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(89,92,90)"
+                      class="bi bi-moon" viewBox="0 0 16 16">
+                      <path
+                        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item d-none d-sm-block"><a class="nav-link" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="rgb(89,92,90)"
+                      class="bi bi-fullscreen" viewBox="0 0 16 16">
+                      <path
+                        d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item bg-body-tertiary border-end border-start border-1 profile-image h-100">
+                  <a class="nav-link profile" href="">
+                    <div class="d-flex align-items-center mt-2">
+                      <img src="image/avatar.jpg" alt="your avatar" width="34px" height="34px"
+                        class="rounded-circle me-2">
+                      <div class="flex-column d-none d-md-flex">
+                        <span class="h6 m-0">Dominic Keller</span>
+                        <span class="small">Founder</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="mx-3">
+        <!-- main head -->
+        <div class="row">
+          <div class="container-fluid my-4">
+            <div class="col-12 d-flex align-items-center justify-content-between">
+              <h5 class="text-secondary">Dashboard</h5>
+              <div class="d-md-flex d-none">
+                <form class="d-flex">
+                  <label for="date"></label>
+                  <input class="form-control-sm border-0 rounded-end-0 bg-body-secondary date-box" type="date"
+                    value="9/22/2023" id="date" name="date">
+                  <button class="btn btn-primary rounded-start-0 p-2 d-flex align-items-center" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white"
+                      class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                      <path
+                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z" />
+                      <path
+                        d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                    </svg>
+                  </button>
+                </form>
+                <button class="btn btn-primary rounded-1 ms-2 p-2 d-flex align-items-center" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                    <path
+                      d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                    <path fill-rule="evenodd"
+                      d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                  </svg>
+                </button>
+                <button class="btn btn-primary rounded-1 ms-2 p-2 d-flex align-items-center" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-filter" viewBox="0 0 16 16">
+                    <path
+                      d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- main first part -->
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 col-12">
+            <div class="row">
+              <div class="top-left col-sm-6 col-12">
+                <div class="card border-0 rounded-1 text-bg-white">
+                  <div class="card-body">
+                    <span class="text-secondary small">Customers</span>
+                    <h4 class="text-secondary mb-3 mt-3">36,254</h4>
+                    <p class="mb-0">
+                      <span class="text-success fw-bold me-2 d-flex align-items-center ">
+                        <i class="pb-1 pe-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                          </svg>
+                        </i>
+                        5.27%
+                      </span>
+                      <span class="text-secondary">Since last month</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="top-right col-sm-6 col-12 mt-sm-0 mt-4">
+                <div class="card border-0 rounded-1 text-bg-white">
+                  <div class="card-body">
+                    <span class="text-secondary small">Orders</span>
+                    <h4 class="text-secondary mb-3 mt-3">5,543</h4>
+                    <p class="mb-0">
+                      <span class="text-danger fw-bold me-2 d-flex align-items-center ">
+                        <i class="pb-1 pe-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+                          </svg>
+                        </i>
+                        1.08%
+                      </span>
+                      <span class="text-secondary">Since last month</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="botom-left col-sm-6 col-12">
+                <div class="card border-0 rounded-1 text-bg-white">
+                  <div class="card-body">
+                    <span class="text-secondary small">Revenue</span>
+                    <h4 class="text-secondary mb-3 mt-3">$6,254</h4>
+                    <p class="mb-0">
+                      <span class="text-danger fw-bold me-2 d-flex align-items-center ">
+                        <i class="pb-1 pe-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+                          </svg>
+                        </i>
+                        7.00%
+                      </span>
+                      <span class="text-secondary">Since last month</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom-right col-sm-6 col-12 mt-sm-0 mt-4">
+                <div class="card border-0 rounded-1 text-bg-white">
+                  <div class="card-body">
+                    <span class="text-secondary small">Growth</span>
+                    <h4 class="text-secondary mb-3 mt-3">+ 30.56%</h4>
+                    <p class="mb-0">
+                      <span class="text-success fw-bold me-2 d-flex align-items-center ">
+                        <i class="pb-1 pe-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                          </svg>
+                        </i>
+                        1.08%
+                      </span>
+                      <span class="text-secondary">Since last month</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-6 mt-xl-0 mt-4 col-12">
+            <div class="card border-0 text-bg-white">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h6 class="card-title text-secondary">PROJECTIONS VS ACTUALS</h6>
+                  <button class="btn mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                      <path
+                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                    </svg>
+                  </button>
+                </div>
+                <img class="card-img-bottom" src="image/projection-actuals.png" alt="a chart">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- main second part -->
+        <div class="row mt-4">
+          <div class="col-lg-8 col-12">
+            <div class="card border-0 text-bg-white">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h6 class="card-title text-secondary">REVENUE</h6>
+                  <button class="btn mb-2 pe-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                      <path
+                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="card-header d-flex justify-content-around py-4 border-0 rounded-1">
+                  <div>
+                    <div class="text-secondary ps-3 pb-1">Current Week</div>
+                    <div class="d-flex align-items-center">
+                      <div class="me-2">
+                        <div class="bg-primary rounded-5 circle"></div>
+                      </div>
+                      <h3>$58,254</h3>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-secondary ps-3 pb-1">Previous Week</div>
+                    <div class="d-flex align-items-center">
+                      <div class="me-2">
+                        <div class="bg-success rounded-5 circle"></div>
+                      </div>
+                      <h3>$69,524</h3>
+                    </div>
+                  </div>
+                </div>
+                <img class="card-img-bottom mt-3 border-0" src="image/REVENUE.png" alt="line chart">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-lg-0 mt-4 col-12">
+            <div class="card border-0 text-bg-white">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h6 class="card-title text-secondary">REVENUE BY LOCATION</h6>
+                  <button class="btn mb-2 pe-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                      <path
+                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <img class="card-img" src="image/Revenue-location.png" alt="map">
+                </div>
+
+                <h6 class="fw-normal text-secondary mt-0 mb-1">New York</h6>
+                <div class="progress-w-percent d-flex">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 72%;" aria-valuenow="72"
+                      aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                  <span class="progress-value fw-bold ms-3 text-secondary">72k</span>
+                </div>
+
+                <h6 class="fw-normal text-secondary mt-0 mb-1">San Francisco</h6>
+                <div class="progress-w-percent d-flex">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 39%;" aria-valuenow="39"
+                      aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                  <span class="progress-value fw-bold ms-3 text-secondary">39k</span>
+                </div>
+
+                <h6 class="fw-normal text-secondary mt-0 mb-1">Sydney</h6>
+                <div class="progress-w-percent d-flex">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                  <span class="progress-value fw-bold ms-3 text-secondary">25k</span>
+                </div>
+
+                <h6 class="fw-normal text-secondary mt-0 mb-1">Singapore</h6>
+                <div class="progress-w-percent d-flex">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 61%;" aria-valuenow="61"
+                      aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                  <span class="progress-value fw-bold ms-3 text-secondary">61k</span>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- main third part -->
+        <div class="row my-4 ">
+          <div class="col-xl-6 col-12 order-lg-2 mt-lg-4 mt-xl-0 order-xl-1">
+            <div class="card text-bg-white border-0">
+              <div class="card-header d-flex justify-content-between align-items-center bg-white border-0 py-3 px-4">
+                <h6 class="text-secondary ">TOP SELLING PRODUCTS</h6>
+                <div class="d-flex align-items-center">
+                  <a href="" class="btn bg-light mb-2 shadow-sm">
+                    <span class="small">Export</span>
+                    <i class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                        class="bi bi-download" viewBox="0 0 16 16">
+                        <path
+                          d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                        <path
+                          d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                      </svg></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body px-4">
+                <div class="table-responsive">
+                  <table class="table table-centered table-nowrap table-hover mb-0">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">ASOS Ridley High Waist</h5>
+                          <span class="td-text">07 April 2018</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">$79.49</h5>
+                          <span class="td-text">Price</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">82</h5>
+                          <span class="td-text">Quantity</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">$6,518.18</h5>
+                          <span class="td-text">Amount</span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">Marco Lightweight Shirt</h5>
+                          <span class="td-text">25 March 2018</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">$128.50</h5>
+                          <span class="td-text">Price</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">37</h5>
+                          <span class="td-text">Quantity</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">$4,754.50</h5>
+                          <span class="td-text">Amount</span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">Half Sleeve Shirt</h5>
+                          <span class="td-text">17 March 2018</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">$39.99</h5>
+                          <span class="td-text">Price</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">64</h5>
+                          <span class="td-text">Quantity</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">$2,559.36</h5>
+                          <span class="td-text">Amount</span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">Lightweight Jacket</h5>
+                          <span class="td-text">12 March 2018</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">$20.00</h5>
+                          <span class="td-text">Price</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">184</h5>
+                          <span class="td-text">Quantity</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">$3,680.00</h5>
+                          <span class="td-text">Amount</span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">Marco Shoes</h5>
+                          <span class="td-text">05 March 2018</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">$28.49</h5>
+                          <span class="td-text">Price</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">69</h5>
+                          <span class="td-text">Quantity</span>
+                        </td>
+                        <td>
+                          <h5 class="td-head my-1 fw-normal">$1,965.81</h5>
+                          <span class="td-text">Amount</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--second part of third section -->
+          <div class="col-xl-3 col-lg-6 order-lg-1 mt-xl-0 mt-4">
+            <div class="card text-bg-white border-0">
+              <div class="card-header d-flex justify-content-between align-items-center bg-white border-0 pb-0 px-4">
+                <h6 class="text-secondary">TOTAL SALES</h6>
+                <button class="btn mb-2 pe-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path
+                      d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="card-body py-0">
+                <div class="d-flex justify-content-center">
+                  <img class="card-img-bottom w-75 h-auto" src="image/total-sales.png" alt="a doughnut chart">
+                </div>
+                <div class="chart-widget-list">
+                  <div class="d-flex align-items-center justify-content-between pb-2 border-bottom border-1 ">
+                    <div class="d-flex align-items-center">
+                      <div class="square bg-primary"></div>
+                      <span class="small ms-1">Direct</span>
+                    </div>
+                    <span class="small">$300.56</span>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between py-2 border-bottom border-1 ">
+                    <div class="d-flex align-items-center">
+                      <div class="square bg-danger"></div>
+                      <span class="small ms-1"> Affilliate</span>
+                    </div>
+                    <span class="small">$135.18</span>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between py-2 border-bottom border-1 ">
+                    <div class="d-flex align-items-center">
+                      <div class="square bg-success"></div>
+                      <span class="small ms-1">Sponsored</span>
+                    </div>
+                    <span class="small">$48.96</span>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between mb-4 py-2 border-bottom border-1 ">
+                    <div class="d-flex align-items-center">
+                      <div class="square bg-warning"></div>
+                      <span class="small ms-1">E-mail</span>
+                    </div>
+                    <span class="small">$154.02</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 order-lg-1 mt-xl-0 mt-4">
+            <div class="card text-bg-white border-0">
+              <div class="card-header d-flex justify-content-between align-items-center bg-white border-0 pb-0 px-4">
+                <h6 class="text-secondary">RECENT ACTIVITY</h6>
+                <button class="btn mb-2 pe-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path
+                      d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="card-body py-0 mb-3 overflow-auto top-0 recent-activity">
+                <div class="d-flex align-items-start">
+                  <div>
+                    <div class="design-svg">
+                      <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                        class="bi bi-upload" viewBox="0 0 16 16">
+                        <path
+                          d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                        <path
+                          d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z" />
+                      </svg>
+                    </div>
+                    <div class="first-line"></div>
+                  </div>
+                  <div class="ms-2">
+                    <div class="fw-bold mb-1 text-info head-text">You sold an item</div>
+                    <div class="mb-1 text-secondary description-text">Paul Burgess just purchased “Hyper - Admin
+                      Dashboard”!</div>
+                    <div class="upload-time mb-1 text-body-tertiary">5 minutes ago</div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start">
+                  <div class="">
+                    <div class="design-svg">
+                      <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-airplane-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z" />
+                      </svg>
+                    </div>
+                    <div class="first-line second-line"></div>
+                  </div>
+                  <div class="ms-2">
+                    <div class="fw-bold mb-1 text-primary head-text bootstrap-product">Product on the Bootstrap Market
+                    </div>
+                    <div class="mb-1 text-secondary description-text">Dave Gamache added <b>Admin Dashboard</b></div>
+                    <div class="upload-time mb-1 text-body-tertiary">30 minutes ago</div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start">
+                  <div class="">
+                    <div class="design-svg">
+                      <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-mic-fill" viewBox="0 0 16 16">
+                        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
+                        <path
+                          d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                      </svg>
+                    </div>
+                    <div class="first-line"></div>
+                  </div>
+                  <div class="ms-2">
+                    <div class="fw-bold mb-1 text-info head-text bootstrap-product">Robert Delaney</div>
+                    <div class="mb-1 text-secondary description-text">Send you message <b>"Are you there?"</b></div>
+                    <div class="upload-time mb-1 text-body-tertiary">2 hours ago</div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start">
+                  <div class="">
+                    <div class="design-svg">
+                      <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                        class="bi bi-upload" viewBox="0 0 16 16">
+                        <path
+                          d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                        <path
+                          d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z" />
+                      </svg>
+                    </div>
+                    <div class="first-line"></div>
+                  </div>
+                  <div class="ms-2">
+                    <div class="fw-bold mb-1 text-primary head-text bootstrap-product">Audrey Tobey</div>
+                    <div class="mb-1 text-secondary description-text">Uploaded a photo <b>"Error.jpg"</b></div>
+                    <div class="upload-time mb-1 text-body-tertiary">14 hours ago</div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start">
+                  <div>
+                    <div class="design-svg">
+                      <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                        class="bi bi-upload" viewBox="0 0 16 16">
+                        <path
+                          d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                        <path
+                          d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z" />
+                      </svg>
+                    </div>
+                    <div class="first-line"></div>
+                  </div>
+                  <div class="ms-2">
+                    <div class="fw-bold mb-1 text-info head-text">You sold an item</div>
+                    <div class="mb-1 text-secondary description-text">Paul Burgess just purchased “Hyper - Admin
+                      Dashboard”!</div>
+                    <div class="upload-time mb-1 text-body-tertiary">16 hours ago</div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start">
+                  <div class="">
+                    <div class="design-svg">
+                      <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-airplane-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z" />
+                      </svg>
+                    </div>
+                    <div class="first-line second-line"></div>
+                  </div>
+                  <div class="ms-2">
+                    <div class="fw-bold mb-1 text-primary head-text bootstrap-product">Product on the Bootstrap Market
+                    </div>
+                    <div class="mb-1 text-secondary description-text">Dave Gamache added <b>Admin Dashboard</b></div>
+                    <div class="upload-time mb-1 text-body-tertiary">22 hours ago</div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start">
+                  <div class="">
+                    <div class="design-svg">
+                      <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-mic-fill" viewBox="0 0 16 16">
+                        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
+                        <path
+                          d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ms-2">
+                    <div class="fw-bold mb-1 text-info head-text bootstrap-product">Robert Delaney</div>
+                    <div class="mb-1 text-secondary description-text">Send you message <b>"Are you there?"</b></div>
+                    <div class="upload-time mb-1 text-body-tertiary">2 days ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
